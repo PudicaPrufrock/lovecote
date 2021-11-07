@@ -1,4 +1,4 @@
-/* Style the body */ 
+/* Lovecote CSS */ 
 
 body { 
     background-color: #EAEAE5;
@@ -36,7 +36,13 @@ header {
 }
 
 #logo {
-    width:20%;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+#logo {
+    display: none;
+  }
 }
 
 #banner {
@@ -193,12 +199,14 @@ h2 {
 
 .aside-image {
     width: 40%;
+	max-width: 100%;
 }
 
 @media only screen and (max-width: 750px) {
  .aside-image {
 	 width: 100%;
 	 padding-top: 5%;
+     max-width: 100%;
  }
 }
 
@@ -351,6 +359,16 @@ label, input {
     display: block;
 }
 */
+
+/* Login */
+
+.login {
+    border-radius: 2.5%;
+    background-color: #BCB99D;
+    padding: 5% 10% 10% 10%;
+	margin-bottom: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* Contact Table */
 
