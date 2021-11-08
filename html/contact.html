@@ -3,13 +3,13 @@
 <html lang="en">
 
     <head>
-        <title>Lovecote - Bespoke Bird Houses</title>
-        <meta name="description" content="Lovecote Bespoke Bird Houses">
+        <title>Lovecote - Bespoke Bird Boxes</title>
+        <meta name="description" content="Lovecote Bespoke Bird Boxes">
         <meta name="keywords" content="Lovecote, birdbox, birdhouse, bird box, bird house, bird">
         <meta name="author" content="Abi Lovegrove">
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="../images/robin.png">
+        <link rel="icon" href="../images/robin.png">
         <link href="../css/style.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,9 @@
 
         <header>
             <img id="logo" src="../images/logo.png" alt="Lovecote Logo">
-            <div id="banner"></div>
+            <div id="banner">
+			    <p id="banner-text">Bespoke Bird Boxes</p>
+			</div>
             <!-- <img src="images/banner.png"> -->
         </header>
 
@@ -49,14 +51,6 @@
                     <input class="input-field" id="email" name="email" type="email" placeholder="Please enter your email here...">
                 </div>
                 <div>
-                    <label>Username</label>
-                    <input class="input-field" id="username" name="username" type="text" placeholder="Please enter your username here...">
-                </div>
-                <div>
-                    <label>Password</label>
-                    <input class="input-field" id="password" name="password" type="password" placeholder="Please enter your password here...">
-                </div>
-                <div>
                     <p>Preferred Contact Method</p>
                     <input id="email-contact" name="contact" type="radio" value="Email" checked>
                     <label for="email-contact">Email</label><br>
@@ -72,6 +66,10 @@
                         <option value="option4">Option 4</option>
                     </select>
                 </div>
+				<div>
+				    <p>Comments</p>
+					<textarea rows="4" cols="50"></textarea>
+				</div>
                 <div id="form-terms">
                     <p>Agree to Terms</p>
                     <input id="checkbox" name="checkbox" type="checkbox">
