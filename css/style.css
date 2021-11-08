@@ -19,7 +19,6 @@ main {
   }
 }
 
-
 /* Header */
 
 header {
@@ -41,7 +40,11 @@ header {
 
 @media only screen and (max-width: 750px) {
 #logo {
-    display: none;
+    /* display: none; */
+	background-color: #EAEAE5;
+	width: 200px;
+	align-self: center;
+	margin: 2.5% 0 2.5% 0;
   }
 }
 
@@ -51,15 +54,50 @@ header {
     background-image: url("../images/banner.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+    position: relative;
+}
+
+#banner-text {
+  background-color: #EAEAE5;
+  color: black;
+  font-family: 'Cabin Sketch';
+  font-size: 32px; /* Responsive font size */
+  margin: 0 auto; /* Center the text container */
+  padding: 15px;
+  text-align: left; /* Center text */
+  position: absolute; /* Position text */
+  margin: 5% 0% 5% 25%;
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+  border-radius: 15px;
+
+/*   top: 50%; /* Position text in the middle */
+/*  left: 30%; /* Position text in the middle */
+/*  transform: translate(-50%, -50%); /* Position text in the middle */
+
 }
 
 @media only screen and (max-width: 750px) {
  #banner {
     width: 100%;
-	height: 100px;
-    background-image: url("../images/banner.png");
+	height: 150px;
+    background-image: url("../images/banner-small.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #banner-text {
+  background-color: #EAEAE5;
+  color: black;
+  font-family: 'Cabin Sketch';
+  font-size: 32px; /* Responsive font size */
+  padding: 15px;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  margin: 5% 15% 5% 15%;
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+  border-radius: 15px;
   }
 }
 
@@ -207,6 +245,7 @@ h2 {
 	 width: 100%;
 	 padding-top: 5%;
      max-width: 100%;
+	 /* order: -1; */
  }
 }
 
@@ -237,7 +276,7 @@ h2 {
 }
 
 .gallery-image-container {
-  background-color:  #d8581c7e;
+  background-color:  #E4C0AB;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
   width: 30%;
@@ -246,7 +285,7 @@ h2 {
 
 @media only screen and (max-width: 750px) {
 .gallery-image-container {
-    background-color: white;
+    background-color: #E4C0AB;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
     width: auto;
@@ -282,9 +321,10 @@ h2 {
 form {
   	width: 50%;
     border-radius: 2.5%;
-    background-color: #BCB99D;
+    background-color: #E4C0AB;
     padding: 3%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: fit-content;
 
 /*    display: block;
 	text-align: center;
@@ -296,9 +336,11 @@ form {
  form {
   	width: 100%;
     border-radius: 2.5%;
-    background-color: #BCB99D;
+    background-color: #E4C0AB;
     padding: 3%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: fit-content;
+	margin-bottom: 10%;
   }
 }
 
