@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- Home Page -->
+
 <html lang="en">
 
     <head>
@@ -11,65 +13,75 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/robin.png">
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
+        <!-- Header -->
         <header>
             <img id="logo" src="images/logo.png" alt="Lovecote Logo">
             <div id="banner">
-			    <p id="banner-text">Bespoke Bird Boxes</p>
-			</div>
+                <p id="banner-text">Bespoke Bird Boxes</p>
+            </div>
             <!-- <img src="images/banner.png"> -->
         </header>
 
+        <!-- Navigation Bar -->
         <nav>
-            <a href="index.html">Home</a>
+            <a class="on-page" href="index.html">Home</a>
             <a href="html/gallery.html">Gallery</a>
             <a href="html/contact.html">Contact</a>    
         </nav>
 
+        <!-- Home Main -->
         <main id="home-main">
+
+            <!-- About  -->
             <section id="home-text">
+
                 <article id="article-1">
                     <h2>Who we are...</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat tincidunt urna sed tempus. Donec ornare tincidunt dui, nec placerat orci rutrum sed. Nunc sit amet elit eu dolor sollicitudin pellentesque ac quis tortor. Aenean efficitur neque in ante egestas, vel tristique ante viverra. Morbi a egestas ante, a vulputate ligula. In a nisi rutrum, molestie quam ac, facilisis turpis. Curabitur quis ligula arcu. Phasellus tempor turpis risus. Nulla in dapibus quam. Cras quis metus ac sem consectetur blandit ac in lectus. Nulla sed ante vel dui elementum cursus. Nunc quam sem, elementum vel vestibulum eget, mattis id augue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat tincidunt urna sed tempus. Donec ornare tincidunt dui, nec placerat orci rutrum sed. Nunc sit amet elit eu dolor sollicitudin pellentesque ac quis tortor. Aenean efficitur neque in ante egestas, vel tristique ante viverra. Morbi a egestas ante, a vulputate ligula. In a nisi rutrum, molestie quam ac, facilisis turpis.</p>
                 </article>
+
                 <article id="article-2">
                     <h2>What we do...</h2>
                     <p>Sed et orci in leo laoreet tincidunt et id nunc. Nam rutrum euismod dui sit amet feugiat. Integer nec nisi in massa bibendum euismod a finibus nisl. Suspendisse viverra posuere nisi, sed lobortis ante interdum id. Fusce ac semper nibh, in vulputate est. Duis consectetur mattis enim in faucibus. Vivamus hendrerit mi nec sem ultricies viverra.</p>
                 </article>
+
                 <article id="article-3">
                     <h2>When we do it...</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat tincidunt urna sed tempus. Donec ornare tincidunt dui, nec placerat orci rutrum sed. Nunc sit amet elit eu dolor sollicitudin pellentesque ac quis tortor. Aenean efficitur neque in ante egestas, vel tristique ante viverra. Morbi a egestas ante, a vulputate ligula. In a nisi rutrum, molestie quam ac, facilisis turpis. Curabitur quis ligula arcu. Phasellus tempor turpis risus. Nulla in dapibus quam. Cras quis metus ac sem consectetur blandit ac in lectus. Nulla sed ante vel dui elementum cursus. Nunc quam sem, elementum vel vestibulum eget, mattis id augue.</p>
-                </article>            
+                    <p>Curabitur quis ligula arcu. Phasellus tempor turpis risus. Nulla in dapibus quam. Cras quis metus ac sem consectetur blandit ac in lectus. Nulla sed ante vel dui elementum cursus. Nunc quam sem, elementum vel vestibulum eget, mattis id augue.</p>
+                </article>
+
             </section>
+
+            <!-- Home Image  -->
             <aside class="aside-image">
-                <!-- Look into making the heading text wrap around the image -->
+                <!-- Consider making the article text wrap around the image -->
                 <div class="side">
                     <img id="home-image" src="images/home-image.png" alt="Bird box hanging from a tree">
                 </div>
-            </aside>    
+            </aside>
+
         </main>
 
+        <!-- Footer  -->
         <footer>
-            <!-- Need to work on CSS for spacing/padding around content -->           
+
             <div class="social-container">
                 <a class="social" href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Logo"></a>
                 <a class="social" href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram Logo"></a>
                 <a class="social" href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube Logo"></a>
+
+                <p class="footer-text">Abi&nbsp;Lovegrove &#128060; | Copyright&nbsp;&copy;&nbsp;2021 | All&nbsp;rights&nbsp;reserved</p>
+
+                <div class="sitemap">
+                    <p>Site Map: <a href="index.html">Home</a> | <a href="html/gallery.html">Gallery</a> | <a href="html/contact.html">Contact</a></p>
+                </div>
             </div>
-            <p class="footer-text">Abi&nbsp;Lovegrove &#128060; | Copyright&nbsp;&copy;&nbsp;2021 | All&nbsp;rights&nbsp;reserved</p>
-            <p>
-                <a href="http://jigsaw.w3.org/css-validator" target="_blank">
-                    <img style="border:0;width:88px;height:31px"
-                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                        alt="Valid CSS!" />
-                    </a>
-            </p>
+
         </footer>
         
     </body>
