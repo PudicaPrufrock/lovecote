@@ -1,4 +1,6 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
+
+<!-- Contact Page -->
 
 <html lang="en">
 
@@ -11,67 +13,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../images/robin.png">
         <link href="../css/style.css" rel="stylesheet" type="text/css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
+        <!-- Header -->
         <header>
             <img id="logo" src="../images/logo.png" alt="Lovecote Logo">
             <div id="banner">
-			    <p id="banner-text">Bespoke Bird Boxes</p>
-			</div>
+                <p id="banner-text">Bespoke Bird Boxes</p>
+            </div>
             <!-- <img src="images/banner.png"> -->
         </header>
 
+        <!-- Navigation Bar -->
         <nav>
             <a href="../index.html">Home</a>
             <a href="../html/gallery.html">Gallery</a>
-            <a href="../html/contact.html">Contact</a>    
+            <a class="on-page" href="../html/contact.html">Contact</a>    
         </nav>
 
+        <!-- Contact Main -->
         <main class="contact-main">
+
+            <!-- Contact Form -->
             <form>
+
+                <p class="form-header">Want to get in touch? Just complete the form below&#8230; or send us a messenger pigeon!</p>
                 <div>
-                    <label>Name</label>
+                    <label class="form-subheading">Name</label>
                     <input class="input-field" id="name" name="name" type="text" placeholder="Please enter you name here...">
                 </div>
                 <div>
-                    <label>Address</label>
-                    <input class="input-field" id="address" name="address" type="text" placeholder="Please enter your address here...">
-                </div>
-                <div>
-                    <label>Phone</label>
-                    <input class="input-field" id="phone" name="phone" type="text" placeholder="Please enter your phone here...">
-                </div>
-                <div>
-                    <label>Email</label>
+                    <label class="form-subheading">Email</label>
                     <input class="input-field" id="email" name="email" type="email" placeholder="Please enter your email here...">
                 </div>
                 <div>
-                    <p>Preferred Contact Method</p>
+                    <label class="form-subheading">Phone</label>
+                    <input class="input-field" id="phone" name="phone" type="text" placeholder="Please enter your phone here...">
+                </div>
+                <div>
+                    <label class="form-subheading">Address</label>
+                    <input class="input-field" id="address" name="address" type="text" placeholder="Please enter your address here...">
+                </div>
+                <div>
+                    <p class="form-subheading">Preferred Contact Method</p>
                     <input id="email-contact" name="contact" type="radio" value="Email" checked>
                     <label for="email-contact">Email</label><br>
                     <input id="phone-contact" name="contact" type="radio" value="Phone">
                     <label for="phone-contact">Phone</label><br>
                 </div>
                 <div>
-				    <p>Reason for Contact</p>
+                    <p class="form-subheading">Reason for Contact</p>
                     <select class="input-field">
-                        <option value="option1">Option 1</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
-                        <option value="option4">Option 4</option>
+                        <option disabled selected>Please select&#8230;</option>
+                        <option value="generalQuery">General query</option>
+                        <option value="placeOrder">Place an order</option>
+                        <option value="complaint">Have a problem</option>
                     </select>
                 </div>
-				<div>
-				    <p>Comments</p>
-					<textarea rows="4" cols="50"></textarea>
-				</div>
+                <!-- 
+                <div>
+                    <p>Comments</p>
+                    <textarea rows="4" cols="50"></textarea>
+                </div>
+                -->
                 <div id="form-terms">
-                    <p>Agree to Terms</p>
+                <p>Agree to Terms</p>
                     <input id="checkbox" name="checkbox" type="checkbox">
                 </div>
                 <div>
@@ -80,69 +89,70 @@
             </form>
 
 
-            <address>
+            <div>
+
+                <!-- Login -->
                 <div class="login">
-                    <h4>Already a member?</h4>
-					<div>
-                        <label>Username</label>
+                    <p class="login-header">Already part of the flock?</p>
+                    <div>
+                        <label class="login-subheading">Username</label>
                         <input class="input-field" id="username" name="username" type="text" placeholder="Please enter your username here...">
                     </div>
                     <div>
-                        <label>Password</label>
+                        <label class="login-subheading">Password</label>
                         <input class="input-field" id="password" name="password" type="password" placeholder="Please enter your password here...">
                     </div>           
                 </div>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Contact Name</td>
-                            <td>Robin Redbreast</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td>hello@lovecote.com</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>1 Robin Avenue, Town, County</td>
-                        </tr>
-                        <tr>
-                            <td>Phone Number</td>
-                            <td>(+44) 1800 12345</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="google-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.96308640274!2d-0.8429109842419363!3d51.182903279583186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d2900790f3db%3A0x12debd0c0344428f!2sBirdworld!5e0!3m2!1sen!2sau!4v1634780830095!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </address>
+                
+                <!-- Address Table -->
+                <address>
+                    <div class="table-background">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="table-header">Name</td>
+                                    <td>Robin Redbreast</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-header">Email</td>
+                                    <td>hello@lovecote.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-header">Address</td>
+                                    <td>1 Robin Avenue, Nest, Oak</td>
+                                </tr>
+                                <tr>
+                                    <td class="table-header">Number</td>
+                                    <td>(+44) 1800 12345</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.96308640274!2d-0.8429109842419363!3d51.182903279583186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d2900790f3db%3A0x12debd0c0344428f!2sBirdworld!5e0!3m2!1sen!2sau!4v1634780830095!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </address>
+            </div>
 
         </main>
 
+        <!-- Footer  -->
         <footer>
+
             <div class="social-container">
                 <a class="social" href="https://www.facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook Logo"></a>
                 <a class="social" href="https://www.instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram Logo"></a>
                 <a class="social" href="https://www.youtube.com" target="_blank"><img src="../images/youtube.png" alt="YouTube Logo"></a>
+                
+                <p class="footer-text">Abi&nbsp;Lovegrove &#128060; | Copyright&nbsp;&copy;&nbsp;2021 | All&nbsp;rights&nbsp;reserved</p>
+
+                <div class="sitemap">
+                    <p>Site Map: <a href="../index.html">Home</a> | <a href="../html/gallery.html">Gallery</a> | <a href="../html/contact.html">Contact</a></p>
+                </div>
             </div>
-            <p class="footer-text">Abi&nbsp;Lovegrove &#128060; | Copyright&nbsp;&copy;&nbsp;2021 | All&nbsp;rights&nbsp;reserved</p>
+
         </footer>
         
     </body>
 
 </html>
-
-            <!--    
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <label>Name</label>
-                            </td>
-                            <td>
-                                <input id="name" name="name" type="text">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            -->
